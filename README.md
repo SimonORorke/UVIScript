@@ -8,4 +8,6 @@ There are no examples in UVI-supplied sound banks of programs where macros on Fa
 
 The **DAHDSR Controller** script controls a program-level DAHDSR's attack, decay, sustain and release parameters with macros defined in the standard GUI, avoiding the need for a script-defined image GUI.  This is the GUI of **Tibetan Horns**, the example Falcon program that contains the **DAHDSR Controller** Script Processor.
 
-<img src="D:\Simon\OneDrive\Documents\Music\Software\UVI\GitHub Repositories\UVIScript\Images\Tibetan Horns.png" alt="Tibetan Horns" style="zoom: 80%;" />
+<img src="Images\Tibetan Horns.png" alt="Tibetan Horns" style="zoom: 80%;" />
+
+BLAH
