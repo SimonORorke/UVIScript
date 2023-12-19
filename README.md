@@ -6,4 +6,6 @@ The "hybrid" synthesizer / sampler [UVI Falcon]( https://www.uvi.net/falcon) all
 
 There are no examples in UVI-supplied sound banks of programs where macros on Falcons standard Info Page control a DAHDSR's attack, decay, sustain and release. Instead, attack, decay, sustain and release knobs are provided on image GUIs defined in scripts. The problem is that Falcon does not provide a way to scale macro values (range 0 to 1) up to required parameter value maxima greater than one. For example, the maximum for for the DAHDSR's ReleaseTime parameter is 20 seconds.
 
-The **DAHDSR Controller** script controls a program-level DAHDSR's attack, decay, sustain and release parameters with macros defined in the standard GUI, avoiding the need for a script-defined image GUI.<img src="Images\Tibetan Horns.png" alt="Tibetan Horns" style="zoom: 80%;" />
+The **DAHDSR Controller** script controls a program-level DAHDSR's attack, decay, sustain and release parameters with macros defined in the standard GUI, avoiding the need for a script-defined image GUI.  This is the GUI of **Tibetan Horns**, the example Falcon program that contains the **DAHDSR Controller** Script Processor.
+
+<img src="D:\Simon\OneDrive\Documents\Music\Software\UVI\GitHub Repositories\UVIScript\Images\Tibetan Horns.png" alt="Tibetan Horns" style="zoom: 80%;" />
