@@ -27,7 +27,23 @@ A limitation of this technique is that, in order to initialise the values of the
 
 To avoid having to hard-code the macro **Names** in the script, I have investigated accessing the macros via their **DisplayNames**, which are what are shown in the GUI. Unfortunately, that appears to be impossible.  So, to find the program's internal macro **Names**, look in the Falcon program file (**Programs\Tibetan Horns.uvip** in the example) with a text editor. *Tip: If you save the program file with an XML header in a smart editor, you will see the program's XML colour-coded. This works with Notepad++ (Windows), Visual Studio Code (Windows and Mac) and, I expect, BBEdit/TextWrangler (Mac).* In Falcon program files, a macro is called a **ConstantModulation**.  So look for something like this:
 
-<img src="Images\XML Macro Example.png" alt="XML Macro Example" style="zoom: 80%;" />
+```xml
+<?xml version="1.0" encoding="utf-8"?> <!-- You may add this XML header line. -->
+<UVI4>
+	<!-- Many lines of XML code are ommitted here. -->
+	<ConstantModulation Name="Macro 5" Bypass="0" DisplayName="Attack" Bipolar="0" Style="0" Value="0">
+```
+
+To change the the macro **Names** in the script, edit UVIScript file **Scripts\DahdsrController\DahdsrController.lua**. *Tip: To see the Lua code in the script file colour-coded, use a smart editor. This works with Notepad++ (Windows), Visual Studio Code (Windows and Mac) and, I understand, BBEdit/TextWrangler (Mac).* The macro **Name** constants to edit are immediately after the long introductory comment:
+
+```lua
+-- Constants
+local AttackMacroName = "Macro 5"
+local DahdsrName = "DAHDSR 1"
+local DecayMacroName = "Macro 6"
+local ReleaseMacroName = "Macro 8"
+local SustainMacroName = "Macro 7"
+```
 
 To make control of the DAHDSR's parameters by the macros more ergonomic, the script processor also has knobs to specify the maximum number of seconds that may be specified by the Attack, Decay and Release macros and knobs:
 <img src="Images\Max Seconds.png" alt="Max Seconds" style="zoom: 80%;" />
