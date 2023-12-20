@@ -40,7 +40,7 @@ The **Tibetan Horns** Falcon program is provided primarily as an example host fo
 
 Organic Pads programs have four timbre layers that can be mixed together: Synthesis, Sample, Noise and Texture. In the original programs, the layers are mixed by a single X-Y control on the script-defined GUI. That limits the possible mixing permutations. As my hardware MIDI controllers include five expression pedals, I have replaced the X-Y control with four macros. Each of these macros modulates the gain of a specific layer, and each macro is in turn modulated by the MIDI CC of an expression pedal.  That way I can vary the gains of the four layers completely independently of each other.
 
-The other change in my version of the program compared with the original is that all delay and reverb effects have been bypassed.
+The other change I've made to the sound of the program is that all delay and reverb effects have been bypassed.
 
 ### A problem still to solve
 
